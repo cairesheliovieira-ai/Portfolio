@@ -2,19 +2,19 @@
 (() => {
   if (!matchMedia('(hover: hover)').matches || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
-  // ===== AJUSTES: mexa só aqui =====
+  // AJUSTES: 
   const PALETA = ['#38d5ff', '#8b7bff', '#ff5fa2', '#3de8b0']; // cores da tinta, em ordem
-  const VELOCIDADE_COR = 0.14;  // quão rápido a cor muda enquanto você move o mouse
+  const VELOCIDADE_COR = 0.12;  // quão rápido a cor muda enquanto você move o mouse
   const INTENSIDADE = 0.15;     // quanta tinta cada movimento deposita (0.08 sutil, 0.3 forte)
   const OPACIDADE = 0.40;       // opacidade máxima da fumaça (1 = totalmente sólida)
   const DURACAO = 2;          // quão rápido a tinta some (menor = fica mais tempo)
-  const RAIO = 0.12;            // espessura do rastro
+  const RAIO = 0.10;            // espessura do rastro
   const FORCA = 6000;           // força com que o mouse empurra o fluido
   const TURBILHAO = 25;         // quantidade de redemoinhos
   const RES_SIMULACAO = 128;    // resolução da física (maior = mais detalhe e mais pesado)
   const RES_COR = 640;          // resolução da tinta
   const TEMPO_OCIOSO = 8000;    // ms parado até a animação pausar para poupar bateria
-
+  
   const canvas = document.createElement('canvas');
   canvas.className = 'efeito-fluido';
   canvas.setAttribute('aria-hidden', 'true');
