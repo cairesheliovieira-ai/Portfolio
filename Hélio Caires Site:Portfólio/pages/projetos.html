@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Projetos | Hélio Caires</title>
+<meta name="description" content="Projetos de IA, dados e desenvolvimento web de Hélio Caires.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<script src="../js/main.js" defer></script>
+</head>
+<body>
+<header class="topo"><div class="wrap">
+<a class="marca" href="../index.html">Hélio Caires</a>
+<button class="burger" aria-expanded="false" aria-controls="menu">Menu</button>
+<ul class="menu" id="menu"><li><a href="../index.html">Início</a></li><li><a href="projetos.html" aria-current="page">Projetos</a></li><li><a href="contato.html">Contato</a></li></ul>
+</div></header>
+<main>
+<section><div class="wrap">
+<h2>Projetos</h2>
+<div class="filtros" role="group" aria-label="Filtrar projetos">
+<button aria-pressed="true" data-filtro="todos">Todos</button>
+<button aria-pressed="false" data-filtro="ia">IA</button>
+<button aria-pressed="false" data-filtro="dados">Dados</button>
+<button aria-pressed="false" data-filtro="web">Web</button>
+</div>
+<div class="grade">
+<article class="projeto" data-cat="ia">
+<h3>Assistente de voz Alexa com LLM</h3><span class="ano">2026</span>
+<p>Assistente conversacional com arquitetura serverless na AWS.</p>
+<ul><li>Integrei um LLM (API GEMINI) e converti as respostas em JSON estruturado.</li><li>Usei Lambda e IAM, mantendo o estado em conversas de várias etapas.</li><li>Isolei as credenciais em variáveis de ambiente e monitorei os logs.</li></ul>
+<ul class="tags"><li>AWS Lambda</li><li>IAM</li><li>LLM</li><li>JSON</li></ul>
+</article>
+<article class="projeto" data-cat="ia dados">
+<h3>Planilha de fundos patrimoniais</h3><span class="ano">2026</span>
+<p>Planilha automatizada com IA, com os fundos patrimoniais do Brasil e da América Latina.</p>
+<ul><li>Criei um painel interativo para apoiar a consultoria familiar.</li><li>A visualização dos dados é personalizada para a análise.</li></ul>
+<ul class="tags"><li>IA</li><li>Excel</li><li>Painel</li></ul>
+</article>
+<article class="projeto" data-cat="dados">
+<h3>Radar de Financiamento</h3><span class="ano">2026</span>
+<p>Planilha que mapeia fundos e bancos de desenvolvimento para projetos na América Latina.</p>
+<ul><li>Levantei e padronizei dados de mais de 128 fundos de financiamento.</li><li>Corrigi inconsistências para manter a base completa e confiável.</li><li>Propus a atualização automática a partir de várias fontes.</li></ul>
+<ul class="tags"><li>Qualidade de dados</li><li>Planilhas</li></ul>
+</article>
+<article class="projeto" data-cat="web">
+<h3>VelocityNet</h3><span class="ano">2026</span>
+<p>Teste de velocidade de internet que mede ping, download e upload e mostra o resultado em um gráfico em tempo real.</p>
+<ul><li>Front-end em HTML, CSS e JavaScript puro; back-end em Java 17 com Spring Boot 3.</li><li>Empacotado com Docker; back-end no Render e front-end na Vercel.</li><li>Segurança: CORS configurável, limite de requisições por IP, CSP e cabeçalhos de segurança.</li></ul>
+<ul class="tags"><li>Java</li><li>Spring Boot</li><li>JavaScript</li><li>Docker</li></ul>
+<a class="btn" href="https://velocitynet.vercel.app" target="_blank" rel="noopener">Abrir o projeto</a>
+</article>
+</div>
+</div></section>
+
+</main>
+<footer class="rodape"><div class="wrap">© <span id="ano">2026</span> Hélio Caires. Feito com HTML, CSS e JavaScript.</div></footer>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Hélio Caires | Estudante de Ciência da Computação</title>
+<meta name="description" content="Portfólio de Hélio Caires, estudante de Ciência da Computação em Brasília, com projetos em IA, automação e dados.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/main.js" defer></script>
+</head>
+<body>
+<header class="topo"><div class="wrap">
+<a class="marca" href="index.html">Hélio Caires</a>
+<button class="burger" aria-expanded="false" aria-controls="menu">Menu</button>
+<ul class="menu" id="menu"><li><a href="index.html" aria-current="page">Início</a></li><li><a href="pages/projetos.html">Projetos</a></li><li><a href="pages/contato.html">Contato</a></li></ul>
+</div></header>
+<main>
+<section class="hero"><div class="wrap">
+<div>
+<h1>Hélio Junior Vieira Caires</h1>
+<p class="digita" id="digita" aria-live="off">Estudante de Ciência da Computação</p>
+<p class="intro">Moro em Brasília e estou procurando estágio em TI. Trabalho com IA generativa, automação de processos, dados e integração de sistemas.</p>
+<div class="botoes">
+<a class="btn cheio" href="pages/projetos.html">Ver projetos</a>
+<a class="btn" href="docs/curriculo-helio-caires.pdf" download>Baixar currículo</a>
+</div>
+</div>
+<div class="visual">
+<button type="button" class="troca" id="troca" aria-pressed="true" aria-label="Alternar entre a foto e a versão cartoon">
+<img class="real" src="img/perfil.jpg" alt="Foto de Hélio Caires" width="600" height="600">
+<img class="cartoon" src="img/perfil-cartoon.jpg" alt="Versão cartoon de Hélio Caires" width="600" height="600">
+<span class="dica">Ver foto</span>
+</button>
+<pre class="codigo" aria-hidden="true"><code><span class="k">const</span> helio = {
+  <span class="c">curso:</span> <span class="s">"Ciência da Computação"</span>,
+  <span class="c">foco:</span> [<span class="s">"IA"</span>, <span class="s">"Automação"</span>, <span class="s">"Dados"</span>],
+  <span class="c">procura:</span> <span class="s">"estágio em TI"</span>
+};</code></pre>
+</div>
+</div></section>
+
+<section class="sobre" id="sobre"><div class="wrap">
+<div>
+<h2>Sobre mim </h2>
+<p>Cursa Ciência da Computação na UDF (2026–2030). Uso Claude, ChatGPT, Gemini, Kimi e DeepSeek todos os dias e aplico engenharia de prompt nos meus projetos da faculdade.</p>
+<p>Já automatizei com IA uma planilha de fundos patrimoniais para consultoria familiar e integrei um LLM a um assistente de voz serverless na AWS. Também tenho experiência com bancos de dados relacionais, APIs REST e suporte ao usuário.</p>
+<p>Faço o curso de inglês avançado no CIL, com conclusão prevista para junho de 2027.</p>
+</div>
+<div class="skills">
+<div><h3>Linguagens</h3><ul class="tags"><li>Python</li><li>Java</li><li>C</li><li>JavaScript</li></ul></div>
+<div><h3>IA e automação</h3><ul class="tags"><li>Claude</li><li>ChatGPT</li><li>Gemini</li><li>DeepSeek</li><li>Engenharia de prompt</li><li>AWS Lambda</li></ul></div>
+<div><h3>Dados</h3><ul class="tags"><li>MySQL</li><li>SQL Server</li><li>SQLite</li><li>Excel</li><li>Qualidade de dados</li></ul></div>
+<div><h3>Ferramentas</h3><ul class="tags"><li>Git e GitHub</li><li>Docker</li><li>Spring Boot</li><li>APIs REST</li><li>LGPD</li></ul></div>
+</div>
+</div></section>
+
+</main>
+<footer class="rodape"><div class="wrap">© <span id="ano">2026</span> Hélio Caires. Feito com HTML, CSS e JavaScript.</div></footer>
+</body>
+</html>
