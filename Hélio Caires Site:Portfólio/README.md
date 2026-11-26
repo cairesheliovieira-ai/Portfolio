@@ -1,4 +1,4 @@
-# Portfólio — Hélio Caires
+# Portfólio - Hélio Caires
 
 Site pessoal de **Hélio Junior Vieira Caires**, estudante de Ciência da Computação em Brasília. O projeto apresenta seu perfil, habilidades, projetos e informações de contato.
 
@@ -12,7 +12,7 @@ Entre os projetos apresentados estão um assistente de voz com LLM na AWS, plani
 
 ## Tecnologias
 
-O site foi desenvolvido com HTML, CSS e JavaScript, sem frameworks. Também utiliza WebGL 2 para um efeito visual opcional de cursor e Google Fonts para a tipografia.
+O site foi desenvolvido com HTML, CSS e JavaScript, sem frameworks.
 
 ## Executar localmente
 
@@ -23,7 +23,3 @@ python3 -m http.server 8000
 ```
 
 Acesse <http://localhost:8000>.
-
-## Publicação
-
-O site pode ser publicado pelo GitHub Pages selecionando a branch do projeto e a pasta raiz (`/(root)`) em **Settings → Pages**.
