@@ -16,12 +16,8 @@
   const TEMPO_OCIOSO = 8000;    // ms parado até a animação pausar para poupar bateria
 
   const canvas = document.createElement('canvas');
+  canvas.className = 'efeito-fluido';
   canvas.setAttribute('aria-hidden', 'true');
-  // propriedades via CSSOM (permitido pela CSP, ao contrário de style="" no HTML)
-  Object.assign(canvas.style, {
-    position: 'fixed', left: '0', top: '0', width: '100%', height: '100%',
-    zIndex: '-1', pointerEvents: 'none'
-  });
   const gl = canvas.getContext('webgl2', {
     alpha: true, premultipliedAlpha: true, antialias: false, depth: false, stencil: false
   });
